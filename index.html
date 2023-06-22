@@ -1,9 +1,44 @@
+
 <!DOCTYPE html>
 <html>
-    <body>
-        <h1>
-            Hello World
-        </h1>
-        <p><a href="http://kkramer.io">Link Text</a></p>
-    </body>
+<head>
+  <title>Image Grid</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+
+    .grid-item {
+      text-align: center;
+    }
+
+    .thumbnail {
+      width: 100%;
+      height: auto;
+    }
+
+    .title {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <a href="project1.html" class="grid-item">
+      <img class="thumbnail" src="image1.jpg" alt="Image 1">
+      <h3 class="title">Project 1</h3>
+    </a>
+    <a href="project2.html" class="grid-item">
+      <img class="thumbnail" src="image2.jpg" alt="Image 2">
+      <h3 class="title">Project 2</h3>
+    </a>
+    <a href="project3.html" class="grid-item">
+      <img class="thumbnail" src="image3.jpg" alt="Image 3">
+      <h3 class="title">Project 3</h3>
+    </a>
+    <!-- Add more grid items as needed -->
+  </div>
+</body>
 </html>
